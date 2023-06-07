@@ -1,7 +1,7 @@
 """
 This represents the upper limit for calculating prime numbers.
 """
-MAX: int = 1000
+MAX: int = 1000000
 
 
 class SieveOfEratosthenes:
@@ -17,7 +17,8 @@ class SieveOfEratosthenes:
         """
         Prepares a list of all prime numbers less than or equal to a given number.
 
-        - TIME: O(nlog(n))
+        - TIME: O(nlog(log(n))) https://www.geeksforgeeks.org/how-is-the-time-complexity-of-sieve-of-eratosthenes-is-nloglogn/
+
         - SPACE:O(n)
         https://www.geeksforgeeks.org/sieve-of-eratosthenes/
 
